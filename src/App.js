@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaYoutube } from 'react-icons/fa';
+import { FaFacebook, FaGithub, FaYoutube } from 'react-icons/fa';
 
 const App = () => {
     return (
@@ -12,13 +12,26 @@ const App = () => {
             </main>
             <footer>
                 <p className="left">
-                    Subscribe to my{' '}
-                    <a href="https://www.youtube.com/c/anisulislamrubel">
-                        <FaYoutube className="footer__icon" />
-                    </a>{' '}
-                    channel
+                <div className='footer_icons'>
+                        {' '}
+                        <a href="https://www.youtube.com/channel/UCq6qHhcabkUvC0fZuiZ4wUQ">
+                            <FaYoutube className="footer__icon" />
+                        </a>{' '}
+                    </div>
+                    <div className='footer_icons'>
+                        {' '}
+                        <a href="https://www.facebook.com/profile.php?id=100069803313908">
+                            <FaFacebook className="footer__icon" />
+                        </a>{' '}
+                    </div>
+                    <div className='footer_icons'>
+                        {' '}
+                        <a href="https://github.com/mdmahim06">
+                            <FaGithub className="footer__icon" />
+                        </a>{' '}
+                    </div>
                 </p>
-                <p className="right">Developed with &hearts; by Anisul Islam</p>
+                <p className="right">Developed with &hearts; by MD Mahim All Saklain</p>
             </footer>
         </div>
     );
